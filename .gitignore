@@ -1,0 +1,12 @@
+*.pyc
+__pycache__/
+.DS_Store
+
+# Never commit credentials!
+blogger_credentials.json
+blogger_token.json
+
+# Python
+*.egg-info/
+dist/
+build/
