@@ -9,9 +9,11 @@ from urllib.parse import urlencode
 import http.server
 import socketserver
 from urllib.parse import urlparse, parse_qs
+from pathlib import Path
 
 # Load credentials
-with open('/home/shiggy730/Documents/blogger_credentials.json', 'r') as f:
+creds_path = Path.home() / '.blogger-skill' / 'blogger_credentials.json'
+with open(creds_path, 'r') as f:
     creds = json.load(f)['installed']
 
 # OAuth parameters
@@ -88,7 +90,7 @@ if response.status_code == 200:
     tokens = response.json()
     
     # Save tokens
-    token_file = '/home/shiggy730/Documents/blogger_token.json'
+    token_file = Path.home() / '.blogger-skill' / 'blogger_token.json'
     with open(token_file, 'w') as f:
         json.dump(tokens, f, indent=2)
     

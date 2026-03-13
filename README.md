@@ -18,7 +18,7 @@ Create and manage Blogger posts via Google's Blogger API v3.
 
 **Prerequisites:**
 - Google Cloud project with Blogger API enabled
-- OAuth 2.0 credentials saved to `~/Documents/blogger_credentials.json`
+- OAuth 2.0 credentials saved to `~/.blogger-skill/blogger_credentials.json`
 
 **Authorize:**
 ```bash
@@ -26,7 +26,7 @@ cd ~/projects/blogger-skill
 python3 scripts/blogger_auth.py
 ```
 
-This opens your browser for Google authorization and saves tokens to `~/Documents/blogger_token.json`.
+This opens your browser for Google authorization and saves tokens to `~/.blogger-skill/blogger_token.json`.
 
 ### 2. Create Your First Post
 
@@ -90,7 +90,7 @@ blogger-skill/
 
 ## Credentials & Tokens
 
-**Location:** `~/Documents/` (outside git repo)
+**Location:** `~/.blogger-skill/` (outside git repo)
 - `blogger_credentials.json` - OAuth client credentials (from Google Cloud)
 - `blogger_token.json` - Access & refresh tokens (auto-generated)
 

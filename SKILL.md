@@ -19,8 +19,8 @@ Use this skill when:
 ## Prerequisites
 
 **Required files:**
-- `~/Documents/blogger_credentials.json` - OAuth 2.0 client credentials
-- `~/Documents/blogger_token.json` - Access/refresh tokens (generated via auth flow)
+- `~/.blogger-skill/blogger_credentials.json` - OAuth 2.0 client credentials
+- `~/.blogger-skill/blogger_token.json` - Access/refresh tokens (generated via auth flow)
 
 **Required info:**
 - Blog ID (e.g., "natsu-research" or numeric ID)
@@ -118,7 +118,7 @@ python3 scripts/blogger_post.py \
 ## Important Notes
 
 **Security:**
-- Credentials stored in `~/Documents/` (not in skill directory)
+- Credentials stored in `~/.blogger-skill/` (not in skill directory)
 - `.gitignore` excludes credentials
 - Never commit tokens to git
 

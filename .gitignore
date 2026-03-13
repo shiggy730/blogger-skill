@@ -10,3 +10,4 @@ blogger_token.json
 *.egg-info/
 dist/
 build/
+*.swp

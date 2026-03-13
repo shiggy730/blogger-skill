@@ -10,8 +10,8 @@ from datetime import datetime, timedelta
 
 class BloggerClient:
     def __init__(self, credentials_path=None, token_path=None):
-        self.credentials_path = credentials_path or Path.home() / "Documents/blogger_credentials.json"
-        self.token_path = token_path or Path.home() / "Documents/blogger_token.json"
+        self.credentials_path = credentials_path or Path.home() / ".blogger-skill/blogger_credentials.json"
+        self.token_path = token_path or Path.home() / ".blogger-skill/blogger_token.json"
         
         self.credentials = self._load_credentials()
         self.tokens = self._load_tokens()
